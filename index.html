@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EXCELLENT JEWELLERY — Ювелирная мастерская</title>
+  <meta name="description" content="EXCELLENT JEWELLERY — ювелирная мастерская. Тихая роскошь в каждой детали: кольца, серьги, колье и браслеты ручной работы." />
+  <meta name="theme-color" content="#FBF8F3" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ivory: { 50: '#FBF8F3', 100: '#F7F2EA', 200: '#EFE7D6', 300: '#E4D8C0' },
+            sage: { 50: '#F0F1EB', 100: '#DCE0D2', 200: '#C2C9AE', 300: '#9DA688', 400: '#7C8765', 500: '#5F6A4C', 600: '#4A5338' },
+            clay: { 400: '#9B8770', 500: '#7E6A55', 600: '#635340' },
+          },
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+            sans: ['Jost', 'system-ui', 'sans-serif'],
+          },
+          letterSpacing: { editorial: '0.15em', 'wide-sm': '0.08em' },
+          borderRadius: { '4xl': '2rem' },
+        },
+      },
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: Jost, system-ui, sans-serif; background: #FBF8F3; color: #635340; -webkit-font-smoothing: antialiased; }
+    ::selection { background: #DCE0D2; color: #4A5338; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    .anim-up { animation: fadeUp 0.8s ease-out forwards; opacity: 0; }
+    .anim-in { animation: fadeIn 0.6s ease-out forwards; opacity: 0; }
+  </style>
+</head>
+<body class="bg-ivory-50 text-clay-600">
+
+  <header id="header" class="fixed inset-x-0 top-0 z-50 transition-all duration-300">
+    <div class="mx-auto flex max-w-[1440px] items-center justify-between px-6 py-5 lg:px-10">
+      <a href="#" class="font-serif text-xl tracking-wide text-clay-600 lg:text-2xl">EXCELLENT</a>
+      <nav class="hidden items-center gap-8 md:flex">
+        <a href="#collection" class="text-xs uppercase tracking-wide-sm text-clay-500 transition hover:text-sage-500">Коллекция</a>
+        <a href="#story" class="text-xs uppercase tracking-wide-sm text-clay-500 transition hover:text-sage-500">История</a>
+        <a href="#categories" class="text-xs uppercase tracking-wide-sm text-clay-500 transition hover:text-sage-500">Категории</a>
+        <a href="#contact" class="text-xs uppercase tracking-wide-sm text-clay-500 transition hover:text-sage-500">Контакты</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden p-2 text-clay-600" aria-label="Меню">
+        <svg id="menuIcon" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg id="closeIcon" class="hidden" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div id="mobileMenu" class="hidden border-t border-ivory-200 bg-ivory-50 md:hidden">
+      <nav class="flex flex-col gap-4 px-6 py-6">
+        <a href="#collection" class="text-sm uppercase tracking-wide-sm text-clay-500 mobile-link">Коллекция</a>
+        <a href="#story" class="text-sm uppercase tracking-wide-sm text-clay-500 mobile-link">История</a>
+        <a href="#categories" class="text-sm uppercase tracking-wide-sm text-clay-500 mobile-link">Категории</a>
+        <a href="#contact" class="text-sm uppercase tracking-wide-sm text-clay-500 mobile-link">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="relative overflow-hidden bg-ivory-50 pt-24 lg:pt-28">
+      <div class="mx-auto grid min-h-[calc(100svh-2rem)] max-w-[1440px] items-center gap-10 px-6 pb-12 lg:grid-cols-[0.86fr_1.14fr] lg:gap-16 lg:px-10 lg:pb-16">
+        <div class="relative z-10 flex flex-col justify-center lg:pl-10">
+          <div class="mb-8 flex items-center gap-3 text-xs uppercase tracking-editorial text-sage-500 anim-in" style="animation-delay:0.15s">
+            <span class="h-px w-10 bg-sage-300"></span>
+            Коллекция 01 / 2026
+          </div>
+          <h1 class="max-w-xl font-serif text-[clamp(3.5rem,7vw,7.5rem)] leading-[0.86] tracking-[-0.04em] text-clay-600 anim-up" style="animation-delay:0.3s">
+            Красота<br />
+            <span class="ml-[12%] italic font-light text-sage-500">в деталях</span>
+          </h1>
+          <p class="mt-9 max-w-sm text-sm leading-relaxed text-clay-400 anim-up lg:ml-[12%] lg:text-base" style="animation-delay:0.5s">
+            EXCELLENT JEWELLERY — украшения с характером, созданные для тех, кто умеет замечать тихое сияние.
+          </p>
+          <div class="mt-9 flex items-center gap-5 anim-up lg:ml-[12%]" style="animation-delay:0.7s">
+            <a href="#collection" class="group inline-flex items-center gap-3 rounded-full bg-sage-500 px-7 py-4 text-xs uppercase tracking-editorial text-ivory-50 transition hover:bg-sage-600">
+              Смотреть коллекцию
+              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" class="transition group-hover:translate-x-1"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#story" class="hidden text-xs uppercase tracking-wide-sm text-clay-400 transition hover:text-sage-500 sm:block">О мастерской</a>
+          </div>
+        </div>
+        <div class="relative anim-up" style="animation-delay:0.4s">
+          <div class="aspect-[4/5] overflow-hidden rounded-4xl lg:aspect-[5/6]">
+            <img src="https://images.pexels.com/photos/19373665/pexels-photo-19373665.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1800" alt="Модель с украшениями" class="h-full w-full object-cover" />
+          </div>
+          <div class="absolute -bottom-6 -left-4 hidden w-40 overflow-hidden rounded-3xl shadow-xl lg:block xl:-left-8">
+            <img src="https://images.pexels.com/photos/29502969/pexels-photo-29502969.jpeg?auto=compress&cs=tinysrgb&h=700&w=700" alt="Украшение" class="aspect-square w-full object-cover" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="collection" class="py-24 lg:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-10">
+        <div class="mb-14 flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-end">
+          <div>
+            <p class="mb-3 text-xs uppercase tracking-editorial text-sage-400">Избранное</p>
+            <h2 class="font-serif text-4xl leading-tight text-clay-600 lg:text-6xl">Подборка сезона</h2>
+          </div>
+          <p class="max-w-sm text-sm leading-relaxed text-clay-400">Шесть изделий, которые определяют характер нашей мастерской в этом сезоне.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6 lg:gap-5">
+          <div class="group">
+            <div class="relative aspect-[3/4] overflow-hidden rounded-3xl bg-ivory-100">
+              <img src="https://images.pexels.com/photos/17833830/pexels-photo-17833830.jpeg?auto=compress&cs=tinysrgb&h=900&w=600" alt="Колье Аврор" class="h-full w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+            </div>
+            <div class="mt-4 px-1">
+              <h3 class="font-serif text-xl text-clay-600">Колье «Аврор»</h3>
+              <p class="mt-1 text-xs text-clay-400">Жёлтое золото 585°, бриллиант</p>
+              <p class="mt-2 text-sm font-medium text-sage-600">148 000 ₽</p>
+            </div>
+          </div>
+          <div class="group">
+            <div class="relative aspect-[3/4] overflow-hidden rounded-3xl bg-ivory-100">
+              <img src="https://images.pexels.com/photos/19394248/pexels-photo-19394248.png?auto=compress&cs=tinysrgb&h=900&w=600" alt="Серьги Льён" class="h-full w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+            </div>
+            <div class="mt-4 px-1">
+              <h3 class="font-serif text-xl text-clay-600">Серьги «Льён»</h3>
+              <p class="mt-1 text-xs text-clay-400">Жёлтое золото 585°, жемчуг</p>
+              <p class="mt-2 text-sm font-medium text-sage-600">72 000 ₽</p>
+            </div>
+          </div>
+          <div class="group">
+            <div class="relative aspect-[3/4] overflow-hidden rounded-3xl bg-ivory-100">
+              <img src="https://images.pexels.com/photos/38909368/pexels-photo-38909368.jpeg?auto=compress&cs=tinysrgb&h=900&w=600" alt="Кольцо Тише" class="h-full w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+            </div>
+            <div class="mt-4 px-1">
+              <h3 class="font-serif text-xl text-clay-600">Кольцо «Тише»</h3>
+              <p class="mt-1 text-xs text-clay-400">Жёлтое золото 585°, сапфир</p>
+              <p class="mt-2 text-sm font-medium text-sage-600">96 000 ₽</p>
+            </div>
+          </div>
+          <div class="group">
+            <div class="relative aspect-[3/4] overflow-hidden rounded-3xl bg-ivory-100">
+              <img src="https://images.pexels.com/photos/34399115/pexels-photo-34399115.jpeg?auto=compress&cs=tinysrgb&h=900&w=600" alt="Браслет Сэсон" class="h-full w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+            </div>
+            <div class="mt-4 px-1">
+              <h3 class="font-serif text-xl text-clay-600">Браслет «Сэсон»</h3>
+              <p class="mt-1 text-xs text-clay-400">Жёлтое золото 585°, бриллианты</p>
+              <p class="mt-2 text-sm font-medium text-sage-600">124 000 ₽</p>
+            </div>
+          </div>
+          <div class="group">
+            <div class="relative aspect-[3/4] overflow-hidden rounded-3xl bg-ivory-100">
+              <img src="https://images.pexels.com/photos/4889719/pexels-photo-4889719.jpeg?auto=compress&cs=tinysrgb&h=900&w=600" alt="Колье Сэрентэ" class="h-full w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+            </div>
+            <div class="mt-4 px-1">
+              <h3 class="font-serif text-xl text-clay-600">Колье «Сэрентэ»</h3>
+              <p class="mt-1 text-xs text-clay-400">Золото 585°, песочный кварц</p>
+              <p class="mt-2 text-sm font-medium text-sage-600">84 000 ₽</p>
+            </div>
+          </div>
+          <div class="group">
+            <div class="relative aspect-[3/4] overflow-hidden rounded-3xl bg-ivory-100">
+              <img src="https://images.pexels.com/photos/28900485/pexels-photo-28900485.jpeg?auto=compress&cs=tinysrgb&h=900&w=600" alt="Кольцо Лион" class="h-full w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+            </div>
+            <div class="mt-4 px-1">
+              <h3 class="font-serif text-xl text-clay-600">Кольцо «Лион»</h3>
+              <p class="mt-1 text-xs text-clay-400">Золото 585°, белое золото</p>
+              <p class="mt-2 text-sm font-medium text-sage-600">68 000 ₽</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="story" class="bg-ivory-100 py-24 lg:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-10">
+        <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
+          <div class="order-2 overflow-hidden rounded-4xl lg:order-1">
+            <img src="https://images.pexels.com/photos/6262840/pexels-photo-6262840.jpeg?auto=compress&cs=tinysrgb&h=1000&w=1400" alt="Мастер в ювелирной мастерской" class="h-full w-full object-cover aspect-[4/3]" loading="lazy" />
+          </div>
+          <div class="order-1 lg:order-2">
+            <p class="mb-4 text-xs uppercase tracking-editorial text-sage-400">Мастерская EXCELLENT</p>
+            <h2 class="mb-6 font-serif text-4xl leading-[1.1] text-clay-600 lg:text-5xl">
+              Ремесло,<br /><span class="italic font-light">которому сорок лет</span>
+            </h2>
+            <p class="mb-5 text-sm leading-relaxed text-clay-500">
+              Мы начинали как маленькая семейная мастерская в центре Москвы. Сегодня каждый мастер EXCELLENT проходит не менее десяти лет обучения прежде, чем прикоснуться к созданию изделия для нашего каталога.
+            </p>
+            <p class="mb-8 text-sm leading-relaxed text-clay-400">
+              Мы не штампуем украшения. Каждое кольцо, серьги или колье проходит через руки одного мастера от первого эскиза до финальной полировки.
+            </p>
+            <div class="flex gap-10">
+              <div>
+                <p class="font-serif text-4xl text-sage-500">40</p>
+                <p class="mt-1 text-xs uppercase tracking-wide-sm text-clay-400">лет ремесла</p>
+              </div>
+              <div>
+                <p class="font-serif text-4xl text-sage-500">12</p>
+                <p class="mt-1 text-xs uppercase tracking-wide-sm text-clay-400">мастеров</p>
+              </div>
+              <div>
+                <p class="font-serif text-4xl text-sage-500">100%</p>
+                <p class="mt-1 text-xs uppercase tracking-wide-sm text-clay-400">ручная работа</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="categories" class="py-24 lg:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-10">
+        <div class="mb-14 text-center">
+          <p class="mb-3 text-xs uppercase tracking-editorial text-sage-400">Навигация по коллекции</p>
+          <h2 class="font-serif text-4xl leading-tight text-clay-600 lg:text-6xl">Категории</h2>
+        </div>
+        <div class="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6">
+          <a href="#collection" class="group relative block aspect-[4/5] overflow-hidden rounded-4xl">
+            <img src="https://images.pexels.com/photos/9173459/pexels-photo-9173459.jpeg?auto=compress&cs=tinysrgb&h=700&w=560" alt="Колье" class="h-full w-full object-cover transition duration-700 group-hover:scale-110" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent"></div>
+            <div class="absolute inset-x-0 bottom-0 p-5 lg:p-6">
+              <h3 class="font-serif text-2xl text-ivory-50 lg:text-3xl">Колье</h3>
+              <p class="mt-1 text-xs uppercase tracking-wide-sm text-ivory-100/80">24 модели</p>
+            </div>
+          </a>
+          <a href="#collection" class="group relative block aspect-[4/5] overflow-hidden rounded-4xl">
+            <img src="https://images.pexels.com/photos/12168883/pexels-photo-12168883.jpeg?auto=compress&cs=tinysrgb&h=700&w=560" alt="Серьги" class="h-full w-full object-cover transition duration-700 group-hover:scale-110" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent"></div>
+            <div class="absolute inset-x-0 bottom-0 p-5 lg:p-6">
+              <h3 class="font-serif text-2xl text-ivory-50 lg:text-3xl">Серьги</h3>
+              <p class="mt-1 text-xs uppercase tracking-wide-sm text-ivory-100/80">38 моделей</p>
+            </div>
+          </a>
+          <a href="#collection" class="group relative block aspect-[4/5] overflow-hidden rounded-4xl">
+            <img src="https://images.pexels.com/photos/8433597/pexels-photo-8433597.jpeg?auto=compress&cs=tinysrgb&h=700&w=560" alt="Кольца" class="h-full w-full object-cover transition duration-700 group-hover:scale-110" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent"></div>
+            <div class="absolute inset-x-0 bottom-0 p-5 lg:p-6">
+              <h3 class="font-serif text-2xl text-ivory-50 lg:text-3xl">Кольца</h3>
+              <p class="mt-1 text-xs uppercase tracking-wide-sm text-ivory-100/80">52 модели</p>
+            </div>
+          </a>
+          <a href="#collection" class="group relative block aspect-[4/5] overflow-hidden rounded-4xl">
+            <img src="https://images.pexels.com/photos/10341191/pexels-photo-10341191.jpeg?auto=compress&cs=tinysrgb&h=700&w=560" alt="Браслеты" class="h-full w-full object-cover transition duration-700 group-hover:scale-110" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent"></div>
+            <div class="absolute inset-x-0 bottom-0 p-5 lg:p-6">
+              <h3 class="font-serif text-2xl text-ivory-50 lg:text-3xl">Браслеты</h3>
+              <p class="mt-1 text-xs uppercase tracking-wide-sm text-ivory-100/80">19 моделей</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 lg:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-10">
+        <div class="mb-10 text-center">
+          <p class="mb-3 text-xs uppercase tracking-editorial text-sage-400">Lookbook</p>
+          <h2 class="font-serif text-4xl text-clay-600 lg:text-5xl">Как это носят</h2>
+        </div>
+        <div class="overflow-hidden rounded-4xl">
+          <img src="https://images.pexels.com/photos/39319680/pexels-photo-39319680.jpeg?auto=compress&cs=tinysrgb&h=1100&w=1600" alt="Lookbook" class="w-full object-cover aspect-[16/9]" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="bg-ivory-100 py-24 lg:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-10">
+        <div class="grid gap-12 lg:grid-cols-2 lg:gap-20">
+          <div>
+            <p class="mb-4 text-xs uppercase tracking-editorial text-sage-400">Персональный подбор</p>
+            <h2 class="mb-6 font-serif text-4xl leading-[1.1] text-clay-600 lg:text-5xl">
+              Подберём украшение,<br /><span class="italic font-light">которое станет вашим</span>
+            </h2>
+            <p class="mb-8 max-w-md text-sm leading-relaxed text-clay-400">
+              Оставьте имя и удобный способ связи. Наш стилист свяжется с вами в течение дня.
+            </p>
+            <div class="flex flex-col gap-3 text-sm text-clay-400">
+              <p>Москва, ул. Остоженка, 12</p>
+              <p>+7 (495) 000-00-00</p>
+              <p>hello@excellent-jewellery.com</p>
+            </div>
+          </div>
+          <div class="rounded-4xl bg-ivory-50 p-8 lg:p-10">
+            <form id="contactForm" class="flex flex-col gap-6">
+              <div>
+                <label for="name" class="mb-2 block text-xs uppercase tracking-wide-sm text-clay-500">Ваше имя</label>
+                <input id="name" type="text" required placeholder="Анна" class="w-full rounded-2xl border border-ivory-200 bg-white px-5 py-3.5 text-sm text-clay-600 outline-none transition focus:border-sage-300" />
+              </div>
+              <div>
+                <label for="contact" class="mb-2 block text-xs uppercase tracking-wide-sm text-clay-500">Телефон или Telegram</label>
+                <input id="contact" type="text" required placeholder="+7 или @username" class="w-full rounded-2xl border border-ivory-200 bg-white px-5 py-3.5 text-sm text-clay-600 outline-none transition focus:border-sage-300" />
+              </div>
+              <div>
+                <label for="message" class="mb-2 block text-xs uppercase tracking-wide-sm text-clay-500">Комментарий</label>
+                <textarea id="message" rows="3" placeholder="К какому случаю ищете украшение?" class="w-full rounded-2xl border border-ivory-200 bg-white px-5 py-3.5 text-sm text-clay-600 outline-none transition focus:border-sage-300 resize-none"></textarea>
+              </div>
+              <button type="submit" class="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-sage-500 px-7 py-4 text-xs uppercase tracking-editorial text-ivory-50 transition hover:bg-sage-600">
+                Отправить заявку
+              </button>
+            </form>
+            <div id="formSuccess" class="hidden flex-col items-center justify-center py-16 text-center">
+              <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-sage-100">
+                <svg width="24" height="24" fill="none" stroke="#5F6A4C" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>
+              </div>
+              <h3 class="mb-2 font-serif text-2xl text-clay-600">Заявка отправлена</h3>
+              <p class="max-w-xs text-sm leading-relaxed text-clay-400">Спасибо! Мы свяжемся с вами в течение дня.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-sage-600 py-16 lg:py-20">
+    <div class="mx-auto max-w-7xl px-6 lg:px-10">
+      <div class="flex flex-col items-start justify-between gap-10 lg:flex-row lg:items-center">
+        <div>
+          <p class="font-serif text-2xl text-ivory-50 lg:text-3xl">EXCELLENT</p>
+          <p class="mt-2 max-w-xs text-sm text-ivory-100/70">Ювелирная мастерская. Тихая роскошь в каждой детали.</p>
+        </div>
+      </div>
+      <div class="mt-12 border-t border-ivory-50/10 pt-8 text-xs text-ivory-100/50">
+        © 2026 EXCELLENT JEWELLERY. Все права защищены.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 40) {
+        header.classList.add('bg-ivory-50/95', 'backdrop-blur-md', 'shadow-sm');
+      } else {
+        header.classList.remove('bg-ivory-50/95', 'backdrop-blur-md', 'shadow-sm');
+      }
+    });
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuIcon = document.getElementById('menuIcon');
+    const closeIcon = document.getElementById('closeIcon');
+    menuBtn.addEventListener('click', () => {
+      const open = !mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden', open);
+      menuIcon.classList.toggle('hidden', !open);
+      closeIcon.classList.toggle('hidden', open);
+    });
+    document.querySelectorAll('.mobile-link').forEach(a => {
+      a.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+      });
+    });
+    document.getElementById('contactForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      e.target.classList.add('hidden');
+      const s = document.getElementById('formSuccess');
+      s.classList.remove('hidden');
+      s.classList.add('flex');
+    });
+  </script>
+</body>
+</html>
